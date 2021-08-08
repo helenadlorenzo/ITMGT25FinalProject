@@ -2,7 +2,7 @@ python-telegram-bot
 requests
 pandas
 matplotlib
-subprocess
+
 sys
 bob-telegram-tools
 pip
