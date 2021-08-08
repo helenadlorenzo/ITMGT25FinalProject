@@ -52,7 +52,8 @@ def convert(update: Update, context: CallbackContext) -> None:
             result_formatted += '\n' + currency1_name + ' ' + str(currency1_value) + ' = ' + currency2_name_indiv + ' ' + str(currency2_value)
         
         update.message.reply_text(result_formatted)
-    except:
+    except Exception as e:
+        print(e)
         update.message.reply_text('Error. Please try again. Enter /help to see a list of commands.')
 
 def calculate(update: Update, context: CallbackContext) -> None:
