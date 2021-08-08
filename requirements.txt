@@ -4,4 +4,3 @@ pandas
 matplotlib
 
 bob-telegram-tools
-TelegramBot
