@@ -4,3 +4,4 @@ pandas
 matplotlib
 
 bob-telegram-tools
+lxml
