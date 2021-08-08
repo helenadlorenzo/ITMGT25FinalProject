@@ -1,7 +1,5 @@
 import logging
 import requests
-import subprocess
-import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 from telegram import Update, ForceReply
