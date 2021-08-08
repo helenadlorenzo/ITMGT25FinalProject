@@ -1,1 +1,1 @@
-worker: python itmgt2021bot.py
+web: python itmgt2021bot.py
