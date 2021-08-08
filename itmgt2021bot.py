@@ -6,8 +6,8 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 import pandas as pd
 import matplotlib.pyplot as plt
 import subprocess
-import sys
-import pip
+# import sys
+# import pip
 # def install(package):
 #     subprocess.check_call([sys.executable, "-m", "pip", "install", bob-telegram-tools])
 from bob_telegram_tools.bot import TelegramBot
