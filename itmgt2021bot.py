@@ -30,7 +30,6 @@ Type "/history [CURRENCY 1] to [CURRENCY2]" (ex. /history php to usd)
     ''')
 
 def convert(update: Update, context: CallbackContext) -> None:
-    print(context.args)
     r = requests.get('http://api.exchangeratesapi.io/v1/latest?access_key=9a223be759130d6d46862c6665f63926')
 
     try:
@@ -52,7 +51,6 @@ def convert(update: Update, context: CallbackContext) -> None:
         update.message.reply_text('Error. Please try again. Enter /help to see a list of commands.')
 
 def calculate(update: Update, context: CallbackContext) -> None:
-    print(context.args)
     r = requests.get('http://api.exchangeratesapi.io/v1/latest?access_key=9a223be759130d6d46862c6665f63926')
 
     try:
@@ -96,8 +94,6 @@ def calculate(update: Update, context: CallbackContext) -> None:
         update.message.reply_text('Error. Please try again. Enter /help to see a list of commands.')
 
 def history(update: Update, context: CallbackContext) -> None:
-    print(context.args)
-
     chat_id = update.message.chat_id
     bot = TelegramBot("1930727729:AAEEsKKfPyVlW-Ea2UNGBTzkugMXLeBIB3E", chat_id)
 
