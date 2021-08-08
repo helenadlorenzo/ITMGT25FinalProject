@@ -7,9 +7,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import subprocess
 import sys
-# def install(package):
-#     subprocess.check_call([sys.executable, "-m", "pip", "install", bob-telegram-tools])
-# from bob_telegram_tools.bot import TelegramBot
+import pip
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", bob-telegram-tools])
+from bob_telegram_tools.bot import TelegramBot
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
