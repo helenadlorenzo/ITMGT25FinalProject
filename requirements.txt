@@ -6,3 +6,4 @@ subprocess
 sys
 bob-telegram-tools
 pip
+TelegramBot
