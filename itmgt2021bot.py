@@ -127,7 +127,8 @@ def history(update: Update, context: CallbackContext) -> None:
         update.message.reply_text('This may take a while. Please standby.')
         bot.send_plot(plt)
         
-    except:
+    except Exception as e: #UPDATE
+        print(e) # REMOVE
         update.message.reply_text('Error. Please try again. Enter /help to see a list of commands.')
 
 def help(update: Update, context: CallbackContext) -> None:
